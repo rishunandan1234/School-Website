@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+
+:root{
+    --navbar-height:59px;
+}
+
+
+#navbar::before{
+    content:"";
+    background-image: url(../img/download.png);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+
+/* Navigation Bar : List Styling */
+#navbar{
+
+    height: 110px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+#navbar ul{
+    display: flex;
+    padding-left: 390px;
+
+}
+
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  margin: 35px;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+      font-family: Algerian;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+#navbar ul li{
+   
+    list-style: none;
+    font-size: 21px;
+
+}
+
+#navbar ul li a{
+    font-family: 'Cooper Black';
+    color:rgb(251, 248, 248);
+    background-color: rgb(151, 75, 75);
+    
+    display: block;
+    margin: 10px ;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-shadow: -4px 5px 2px rgb(14, 15, 14);
+    transition-property: background-color;
+    transition-duration:.5s ;
+   
+
+}
+
+
+#navbar ul li a:hover{
+    color:rgb(251, 248, 248);
+   background-color: rgb(114, 45, 45);
+   
+
+}
+
+
+.container2{
+    background-color: #cdc0dc;
+    height: 1500px;
+  }
+  
+  #aside1{
+    background-color: #231557;
+    height: 60px;
+    
+  }
+  #aside1 h1{
+    color: #fff;
+    padding-left: 40px;
+    padding-top: 15px;
+    font-size: 30px;
+    
+  }
+  
+  
+  
+  #aside2{
+    font-family: Blackadder ITC;
+    color: #2d2b09;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    font-size: xx-large;
+  }
+  
+  #aside2 p{
+    padding-bottom: 30px;
+  }
+  
+  .container8{
+    background-color: #303036;
+    color: aliceblue;
+    height: 300px;
+    display: grid;
+    grid-gap:1rem;
+    grid-template-areas:
+    'aside3 aside4 aside5'
+    'aside6 aside6 aside6';
+  }
+  
+  #aside3{
+    grid-area: aside3;
+    display: flex;
+    width: 450px;
+  }
+  
+  #aside3 .container1{
+    width: fit-content;
+  }
+  
+  
+  
+  .animate-charcter2
+  {
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #130547 0%,
+    #c2ec19 29%,
+    #9999b8 67%,
+    #a8a317 100%
+  );
+  margin-top: 15px;
+  margin-left: 170px;
+  
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 70px;
+      font-family: Algerian;
+      
+      
+  }
+  
+  @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+  }
+  
+  #aside3 .container1 #address{
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: -110px;
+    text-align: center;
+  }
+  
+  #aside3 .container1 #address p{
+    padding-top: 10px;
+  }
+  
+  #aside4{
+    grid-area: aside4;
+    display: flex;
+  }
+  
+  
+  
+  #aside4 h1{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  #aside4 ul li{
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    
+  }
+  
+  #aside4 ul li a{
+    font-family: 'Cooper Black';
+    color: rgb(250, 244, 244);
+    
+    
+    
+    
+    
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration:.5s ;
+  }
+  
+  
+  
+  #aside4 ul li a:hover{
+    color:rgb(194, 251, 80);
+    
+    
+  }
+  
+  #aside5{
+    grid-area: aside5;
+    display: flex;
+  }
+  
+  #aside5 #ad1{
+    margin-top: 80px;
+    text-align: center;
+    font-size: xx-large;
+    
+  }
+  
+  #aside5 #ad2{
+    margin-top: 25px;
+    font-size: x-large;
+  }
+  #aside5 #ad3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: x-large;
+  }
+  
+  footer{
+    text-align: center;
+    background: black;
+    color: wheat;
+    padding: 9px 20px;
+  }

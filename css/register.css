@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+
+:root{
+    --navbar-height:59px;
+}
+
+/*
+$color-main-1: #9C2855;
+$color-main-2: #E14282;
+$color-light: #FADCE4;
+$color-darker: #7F2044;
+$color-darkest: #591630;
+
+.container1 {
+    
+    display: flex;
+    height: 100vh;
+    
+  }
+.c {
+  border-left: 20px solid $color-darkest;
+  box-shadow: -10px 0px 0 5px $color-darker, -20px 0px 0 6px $color-main-2, -30px 0px 0 7px rgba($color-main-2, 0.6);
+  border-radius: 100% 50% 50% 100% / 100%;
+  height: 200px;
+  width: 180px; 
+}
+
+.s {
+  display: flex;
+  flex-direction: column;
+}
+
+.s:not(:last-of-type) {
+  margin-right: 75px;
+}
+
+.s > .c {
+  height: 100px;
+  width: 100px;
+}
+
+.s > .c:last-of-type {
+  transform: rotate(185deg) translateX(5px) translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .c {
+    height: 100px;
+    width: 90px; 
+  }
+  
+  .s:not(:last-of-type) {
+    margin: 0 75px 0 25px;
+  }
+  
+  .s > .c {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    transform: scale(0.8);
+  }
+}
+*/
+#navbar::before{
+    content:"";
+    background-image: url(../img/download.png);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+
+/* Navigation Bar : List Styling */
+#navbar{
+
+    height: 110px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+#navbar ul{
+    display: flex;
+    padding-left: 390px;
+
+}
+
+/*#logo{
+    margin: 20px 30px;
+}
+
+#logo img{
+    height: 90px;
+    margin: 3px 6px;
+    border-radius: 20px;
+    
+}*/
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  margin: 35px;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+      font-family: Algerian;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+#navbar ul li{
+   
+    list-style: none;
+    font-size: 21px;
+
+}
+
+#navbar ul li a{
+    font-family: 'Cooper Black';
+    color:rgb(251, 248, 248);
+    background-color: rgb(151, 75, 75);
+    
+    display: block;
+    margin: 10px ;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-shadow: -4px 5px 2px rgb(14, 15, 14);
+    transition-property: background-color;
+    transition-duration:.5s ;
+   
+
+}
+
+
+#navbar ul li a:hover{
+    color:rgb(251, 248, 248);
+   background-color: rgb(114, 45, 45);
+   
+
+}

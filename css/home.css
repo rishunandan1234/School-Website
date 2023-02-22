@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishali Central School</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <!---<nav>
+        <div class="container nav__container">
+            <a href="home.html"><h4>VCS</h4></a>
+            <ul class="nav__menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="register.html">REGISTER</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                
+            </ul>
+            
+        </div>
+    </nav>-->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/logo1.png" alt="MySchool">
+        </div>
+
+        <ul>
+            <li class="item"><a href="home.html">HOME</a></li>
+            <li class="item"><a href="about.html">ABOUT US</a></li>
+            <li class="item"><a href="gallery.html">GALLERY</a></li>
+            <li class="item"><a href="register.html">REGISTER</a></li>
+            <li class="item"><a href="login.html">LOGIN</a></li>
+            <li class="item"><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 id="title1">VAISHALI </h1>
+        <h1 id="title2"> CENTRAL </h1>
+        <h1 id="title3"> SCHOOL</h1>
+    </div>
+    
+   
+
+
+</body>
+</html>
